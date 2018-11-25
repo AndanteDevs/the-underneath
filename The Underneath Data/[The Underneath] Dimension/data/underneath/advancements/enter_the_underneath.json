@@ -1,0 +1,30 @@
+{
+  "parent": "underneath:root",
+  "display": {
+    "icon": {
+      "item": "minecraft:skeleton_skull"
+    },
+    "title": {
+      "text": "We need to go a bit deeper",
+      "color": "gray"
+    },
+    "description": {
+      "text": "Enter The Underneath",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "entered_underneath": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "entered_underneath"
+    ]
+  ]
+}

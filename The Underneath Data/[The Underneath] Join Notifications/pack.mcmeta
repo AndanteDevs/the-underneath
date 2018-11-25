@@ -1,0 +1,32 @@
+{
+    "pack": {
+        "pack_format": 0,
+        "description": [
+            {
+                "text": "[TU] ",
+                "color": "aqua"
+            },
+            {
+                "text": "Join Notifications",
+                "color": "dark_purple"
+            },
+            {
+                "text": "\nFor Minecraft 1.13+",
+                "color": "dark_gray"
+            },
+            {
+                "text": "\nv1.0.0.1-r",
+                "color": "dark_gray"
+            }
+        ],
+        "version": "1.0.0.1-r",
+        "credits": [
+            {
+                "id": "andante",
+                "name": "Andante",
+                "nickname": "Dan",
+                "role": "Pack Concept and Creator"
+            }
+        ]
+    }
+}

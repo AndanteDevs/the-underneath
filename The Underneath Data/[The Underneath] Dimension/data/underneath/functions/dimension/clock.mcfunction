@@ -1,0 +1,20 @@
+#@s - console
+#called by #underneath:clock
+
+#creation check
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:crafting_table",Count:1b},OnGround:1b,Dimension:0},scores={TU.D_PosY=41..}] at @s if block ~ ~ ~ #minecraft:air unless block ~ ~ ~ minecraft:end_gateway if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:ender_pearl",Count:1b},OnGround:1b},sort=nearest,limit=1,distance=...5] if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:oak_boat",Count:1b},OnGround:1b},sort=nearest,limit=1,distance=...5] run function underneath:dimension/create_portal
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:crafting_table",Count:1b},OnGround:1b,Dimension:0},scores={TU.D_PosY=41..}] at @s if block ~ ~ ~ #minecraft:air unless block ~ ~ ~ minecraft:end_gateway if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:ender_pearl",Count:1b},OnGround:1b},sort=nearest,limit=1,distance=...5] if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:spruce_boat",Count:1b},OnGround:1b},sort=nearest,limit=1,distance=...5] run function underneath:dimension/create_portal
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:crafting_table",Count:1b},OnGround:1b,Dimension:0},scores={TU.D_PosY=41..}] at @s if block ~ ~ ~ #minecraft:air unless block ~ ~ ~ minecraft:end_gateway if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:ender_pearl",Count:1b},OnGround:1b},sort=nearest,limit=1,distance=...5] if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:birch_boat",Count:1b},OnGround:1b},sort=nearest,limit=1,distance=...5] run function underneath:dimension/create_portal
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:crafting_table",Count:1b},OnGround:1b,Dimension:0},scores={TU.D_PosY=41..}] at @s if block ~ ~ ~ #minecraft:air unless block ~ ~ ~ minecraft:end_gateway if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:ender_pearl",Count:1b},OnGround:1b},sort=nearest,limit=1,distance=...5] if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:jungle_boat",Count:1b},OnGround:1b},sort=nearest,limit=1,distance=...5] run function underneath:dimension/create_portal
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:crafting_table",Count:1b},OnGround:1b,Dimension:0},scores={TU.D_PosY=41..}] at @s if block ~ ~ ~ #minecraft:air unless block ~ ~ ~ minecraft:end_gateway if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:ender_pearl",Count:1b},OnGround:1b},sort=nearest,limit=1,distance=...5] if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:acacia_boat",Count:1b},OnGround:1b},sort=nearest,limit=1,distance=...5] run function underneath:dimension/create_portal
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:crafting_table",Count:1b},OnGround:1b,Dimension:0},scores={TU.D_PosY=41..}] at @s if block ~ ~ ~ #minecraft:air unless block ~ ~ ~ minecraft:end_gateway if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:ender_pearl",Count:1b},OnGround:1b},sort=nearest,limit=1,distance=...5] if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:dark_oak_boat",Count:1b},OnGround:1b},sort=nearest,limit=1,distance=...5] run function underneath:dimension/create_portal
+#remove check
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:wooden_axe"},OnGround:1b}] at @s if block ~ ~ ~ minecraft:end_gateway run function underneath:dimension/remove_portal
+
+#remove portals with no 'supporting' blocks
+execute as @e[tag=TU.D_UnderneathPortal] at @s unless block ~ ~ ~ minecraft:end_gateway run function underneath:dimension/remove_portal
+
+#advancements
+advancement grant @a[scores={TU.D_PosY=..256},nbt={Dimension:1}] only minecraft:story/enter_the_end
+advancement grant @a[scores={TU.D_PosY=..38},nbt={Dimension:0}] only underneath:enter_the_underneath
+execute as @a[nbt={Dimension:1},advancements={minecraft:end/enter_end_gateway=false}] at @s if block ~ ~ ~ minecraft:end_gateway run advancement grant @s only minecraft:end/enter_end_gateway

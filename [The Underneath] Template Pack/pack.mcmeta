@@ -1,0 +1,38 @@
+{
+    "pack": {
+        "pack_format": 0,
+        "description": [
+            {
+                "text": "[TU] ",
+                "color": "aqua"
+            },
+            {
+                "text": "MODULE_NAME",
+                "color": "COLOR_ID.dark"
+            },
+            {
+                "text": "\nFor Minecraft 1.13+",
+                "color": "dark_gray"
+            },
+            {
+                "text": "\nv#.#.#.#-abrw",
+                "color": "dark_gray"
+            }
+        ],
+        "version": "#.#.#.#-abrw",
+        "credits": [
+            {
+                "id": "andante",
+                "name": "Andante",
+                "nickname": "Dan",
+                "role": "Pack Concept and Creator"
+            },
+            {
+                "id": "your_id",
+                "name": "YOUR_NAME",
+                "nickname": "YOUR_NICKNAME",
+                "role": "Module Creator"
+            }
+        ]
+    }
+}

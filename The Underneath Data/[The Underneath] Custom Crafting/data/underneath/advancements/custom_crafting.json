@@ -1,0 +1,30 @@
+{
+  "parent": "underneath:root",
+  "display": {
+    "icon": {
+      "item": "minecraft:crafting_table"
+    },
+    "title": {
+      "text": "Delving deeper...",
+      "color": "gray"
+    },
+    "description": {
+      "text": "Make a custom crafter",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "create_custom_crafter": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "create_custom_crafter"
+    ]
+  ]
+}

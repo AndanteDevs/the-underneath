@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:bedrock"
+    },
+    "title": {
+      "text": "Underneath",
+      "color": "gray"
+    },
+    "description": {
+      "text": "Challenge yourself in the depths of this world!",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "minecraft:textures/block/andesite.png"
+  },
+  "criteria": {
+    "in_game": {
+      "trigger": "minecraft:location"
+    }
+  },
+  "requirements": [
+    [
+      "in_game"
+    ]
+  ]
+}

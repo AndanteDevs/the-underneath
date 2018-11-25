@@ -1,0 +1,4 @@
+particle minecraft:block minecraft:crafting_table ~ ~1 ~ .1 .25 .1 .05 30 force @a
+execute if entity @e[type=minecraft:item,sort=nearest,limit=1,distance=..1,nbt={Item:{tag:{display:{Name:"{\"text\":\"Custom Crafter\"}"}}}}] run summon minecraft:area_effect_cloud ~ ~ ~ {Passengers:[{id:"minecraft:item",Item:{id:"minecraft:crafting_table",Count:1b,tag:{display:{Name:"{\"text\":\"Slightly Damaged Crafting Table\",\"italic\":\"false\"}"}}}},{id:"minecraft:item",Item:{id:"minecraft:cobblestone",Count:7b}},{id:"minecraft:item",Item:{id:"minecraft:redstone",Count:1b}}]}
+data remove entity @e[type=minecraft:item,sort=nearest,limit=1,distance=..1,nbt={Item:{tag:{display:{Name:"{\"text\":\"Custom Crafter\"}"}}}}] Item.tag.display
+kill @s[type=!minecraft:player]

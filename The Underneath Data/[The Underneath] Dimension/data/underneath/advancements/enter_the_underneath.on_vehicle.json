@@ -1,0 +1,30 @@
+{
+  "parent": "underneath:enter_the_underneath",
+  "display": {
+    "icon": {
+      "item": "minecraft:porkchop"
+    },
+    "title": {
+      "text": "Oinky?! Hello?!",
+      "color": "gray"
+    },
+    "description": {
+      "text": "Enter The Underneath on a vehicle and lose it",
+      "color": "gray"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "entered_underneath.on_vehicle": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "entered_underneath.on_vehicle"
+    ]
+  ]
+}
