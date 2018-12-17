@@ -5,7 +5,7 @@
 scoreboard players set AreOtherModules TU.Main 1
 
 #create scoreboards
-#scoreboard objectives add TU.MODULE_INITIALS_LeaveGame OBJECTIVE_CRITERIA [{"text":"[TU: MODULE_INITIALS] ","color":"COLOR_ID.light"},{"text":"OBJECTIVE_NAME","color":"COLOR_ID.dark"}]
+#scoreboard objectives add TU.MODULE_INITIALS_OBJECTIVE_NAME OBJECTIVE_CRITERIA [{"text":"[TU: MODULE_INITIALS] ","color":"COLOR_ID.light"},{"text":"OBJECTIVE_NAME","color":"COLOR_ID.dark"}]
 
 #update check
     #store old build number
